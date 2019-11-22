@@ -23,6 +23,7 @@ class Application
         end
       end
     elsif req.path.match(/add/)
+    binding.pry
       item_to_add = req.params["item"]
       if handle_search(item_to_add)
         @@cart << item_to_add
